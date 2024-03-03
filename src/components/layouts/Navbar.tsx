@@ -1,12 +1,25 @@
+'use client';
+
+import { setIsOPenSidebar } from '@/Redux/Reducers/commonSlice';
+import { useAppDispatch, useAppSelector } from '@/Redux/store';
 import { NavbarConstants } from '@/constants/NavbarConstants';
 import Image from 'next/image';
 import React from 'react';
 
 export default function Navbar() {
+    const { isOPenSidebar } = useAppSelector(state => state.common);
+    const dispatch = useAppDispatch();
+    const handleSidebarClick = () => {
+        dispatch(setIsOPenSidebar(!isOPenSidebar));
+    };
+
     return (
         <nav>
             <div className="flex justify-between px-10 py-4 items-center shadow-md">
-                <div className="flex space-x-2 items-center cursor-pointer">
+                <div
+                    className="flex space-x-2 items-center cursor-pointer"
+                    onClick={handleSidebarClick}
+                >
                     <Image
                         src={NavbarConstants.proejct.logo}
                         alt={NavbarConstants.proejct.logoAltName}
@@ -20,7 +33,10 @@ export default function Navbar() {
                 <div>
                     <ul className="flex space-x-3 px-3">
                         {NavbarConstants.navItems.map((navItem, index) => (
-                            <li className="text-nav-item text-lg hover:text-blue-800 cursor-pointer" key={index}>
+                            <li
+                                className="text-nav-item text-lg hover:text-blue-800 cursor-pointer"
+                                key={index}
+                            >
                                 {navItem.name}
                             </li>
                         ))}

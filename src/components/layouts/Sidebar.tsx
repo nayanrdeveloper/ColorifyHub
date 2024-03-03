@@ -1,8 +1,11 @@
+'use client';
+import { useAppSelector } from '@/Redux/store';
 import { SidebarConstants } from '@/constants/SidebarConstants';
 import Image from 'next/image';
 import React from 'react';
 
 function Sidebar() {
+    const { isOPenSidebar } = useAppSelector(state => state.common);
     return (
         <aside>
             <div className="py-5 px-5 border-r h-screen border-gray-300">
@@ -18,9 +21,11 @@ function Sidebar() {
                                 height={30}
                                 width={30}
                             />
-                            <span className="font-medium pl-4 group-hover:text-blue-800">
-                                {sidebarItem.name}
-                            </span>
+                            {isOPenSidebar && (
+                                <span className="font-medium pl-4 group-hover:text-blue-800">
+                                    {sidebarItem.name}
+                                </span>
+                            )}
                         </li>
                     ))}
                 </ul>

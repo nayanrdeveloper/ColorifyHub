@@ -2,7 +2,7 @@ export const NavbarConstants = {
     proejct: {
         title: 'ColorifyHub',
         logo: '/logo.png',
-        logoAltName: 'ColorifyHub Logo'
+        logoAltName: 'ColorifyHub Logo',
     },
     navItems: [
         {
