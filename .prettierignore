@@ -1,0 +1,6 @@
+node_modules/
+public/
+.next/
+build/
+# Ignore all files ending with .min.css
+*.min.css
