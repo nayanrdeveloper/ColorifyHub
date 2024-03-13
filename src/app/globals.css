@@ -77,6 +77,6 @@
 
 @layer components {
     .palette-item {
-        @apply w-56 h-14 mt-[-10px] rounded-sm;
+        @apply w-56 h-14 mt-[-10px] rounded-sm cursor-pointer;
     }
 }
