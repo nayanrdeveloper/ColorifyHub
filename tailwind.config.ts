@@ -52,6 +52,8 @@ const config = {
                     DEFAULT: 'hsl(var(--card))',
                     foreground: 'hsl(var(--card-foreground))',
                 },
+                sectionHeader: '#404040',
+                sectionSubHeader: '#959595',
             },
             borderRadius: {
                 lg: 'var(--radius)',
@@ -71,6 +73,10 @@ const config = {
             animation: {
                 'accordion-down': 'accordion-down 0.2s ease-out',
                 'accordion-up': 'accordion-up 0.2s ease-out',
+            },
+            boxShadow: {
+                palatte:
+                    'rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px',
             },
         },
     },
