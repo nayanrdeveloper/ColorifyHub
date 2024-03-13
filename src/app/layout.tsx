@@ -31,7 +31,7 @@ export default function RootLayout({
                         <div className="w-64">
                             <Sidebar />
                         </div>
-                        <div>
+                        <div className='pt-20'>
                             <main>{children}</main>
                         </div>
                     </div>

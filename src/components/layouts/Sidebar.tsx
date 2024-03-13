@@ -7,7 +7,7 @@ import React from 'react';
 function Sidebar() {
     const { isOPenSidebar } = useAppSelector(state => state.common);
     return (
-        <aside>
+        <aside className='fixed left-0 top-[5.2rem]'>
             <div className="py-5 px-5 border-r h-screen border-gray-300">
                 <ul className="">
                     {SidebarConstants.sidebarItems.map((sidebarItem, index) => (
