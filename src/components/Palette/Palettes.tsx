@@ -20,7 +20,7 @@ export default function Palettes() {
     }, [dispatch, page]);
     return (
         <div className="">
-            <div className="grid grid-cols-4 gap-6 p-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
                 {palettes.map(palette => (
                     <PallateCard
                         key={palette._id}

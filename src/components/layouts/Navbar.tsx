@@ -14,8 +14,8 @@ export default function Navbar() {
     };
 
     return (
-        <nav>
-            <div className="flex justify-between px-10 py-4 items-center shadow-md">
+        <nav className='fixed top-0 w-full'>
+            <div className="flex justify-between px-10 py-4 items-center shadow-md bg-white">
                 <div
                     className="flex space-x-2 items-center cursor-pointer"
                     onClick={handleSidebarClick}
