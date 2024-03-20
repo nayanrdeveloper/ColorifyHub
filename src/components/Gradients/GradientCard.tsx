@@ -19,7 +19,7 @@ export default function GradientCard({
                 style={{ backgroundImage: gradientColor }}
                 onClick={copyGradientHandler}
             >
-                <span className="text-white invisible group-hover:visible">
+                <span className="text-white font-bold invisible group-hover:visible">
                     Copy
                 </span>
             </div>

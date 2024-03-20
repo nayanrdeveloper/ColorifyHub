@@ -5,7 +5,7 @@ import React from 'react';
 
 export default function GradientPage() {
     return (
-        <section className="px-1 py-5">
+        <section className="px-6 py-5">
             <SubHeader
                 header={SectionHeaderConstant.gradient.header}
                 subHeader={SectionHeaderConstant.gradient.subHeader}

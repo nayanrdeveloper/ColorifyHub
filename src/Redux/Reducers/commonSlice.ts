@@ -8,9 +8,12 @@ const commonSlice = createSlice({
         setIsOPenSidebar: (state, action: PayloadAction<boolean>) => {
             state.isOPenSidebar = action.payload;
         },
+        setSidebarRoute: (state, action: PayloadAction<string>) => {
+            state.sidebarRoute = action.payload;
+        },
     },
 });
 
-export const { setIsOPenSidebar } = commonSlice.actions;
+export const { setIsOPenSidebar, setSidebarRoute } = commonSlice.actions;
 
 export const commonReducers = commonSlice.reducer;

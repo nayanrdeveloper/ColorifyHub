@@ -7,22 +7,22 @@ export const SidebarConstants = {
         },
         {
             name: 'Gradient',
-            route: '/',
+            route: '/gradient',
             icon: '/sidebarIcons/gradient.png',
         },
         {
             name: 'Solid Color',
-            route: '/',
+            route: '/solid-color',
             icon: '/sidebarIcons/solid-color.png',
         },
         {
             name: 'Brand Color',
-            route: '/',
+            route: '/brand-color',
             icon: '/sidebarIcons/brand-color.png',
         },
         {
             name: 'Color Tools',
-            route: '/',
+            route: '/color-tools',
             icon: '/sidebarIcons/color-tool.png',
         },
     ],

@@ -2,8 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --toastify-color-light: #0091ff;
+    --toastify-text-color-light: #ffffff;
+}
+
 @layer base {
     :root {
+        /* --toastify-color-success: #0091ff; */
+
         --background: 0 0% 100%;
         --foreground: 222.2 84% 4.9%;
 
