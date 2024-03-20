@@ -24,7 +24,7 @@ export default function Gradients() {
     }, [dispatch, page]);
     return (
         <div>
-            <div className="grid grid-cols-4 gap-11 p-6">
+            <div className="grid grid-cols-4 gap-6 p-6">
                 {gradients.map(gradient => (
                     <GradientCard
                         key={gradient._id}

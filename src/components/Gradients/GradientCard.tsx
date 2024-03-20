@@ -13,14 +13,16 @@ export default function GradientCard({
         copyToClipboard(gradientColor);
     };
     return (
-        <div
-            className="w-52 h-52 rounded-md cursor-pointer flex justify-center items-center group"
-            style={{ backgroundImage: gradientColor }}
-            onClick={copyGradientHandler}
-        >
-            <span className="text-white invisible group-hover:visible">
-                Copy
-            </span>
+        <div className='bg-white shadow-palatte p-6 flex justify-center items-center rounded-md'>
+            <div
+                className="w-52 h-52 rounded-md cursor-pointer flex justify-center items-center group"
+                style={{ backgroundImage: gradientColor }}
+                onClick={copyGradientHandler}
+            >
+                <span className="text-white invisible group-hover:visible">
+                    Copy
+                </span>
+            </div>
         </div>
     );
 }
